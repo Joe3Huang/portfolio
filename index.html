@@ -271,8 +271,8 @@
 
     function createModal(name, path) {
         createDivAndInsert(`modal-${name}`, {});
-        includeHTML(`modal-menu`, `${path}/menu-${name}.html`);
-        includeHTML(`modal-${name}`, `${path}/modal-${name}.html`);
+        includeHTML(`modal-menu`, `${window.location.href}/${path}/menu-${name}.html`);
+        includeHTML(`modal-${name}`, `${window.location.href}/${path}/modal-${name}.html`);
     }
 
 
